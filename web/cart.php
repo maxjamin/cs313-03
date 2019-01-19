@@ -24,7 +24,7 @@ session_start();
 
 	//check if removed 
 	if(!empty($_POST["one"])) {
-		$changVal = $_POST["one"];
+		$changVal = $_POST["oneAdd"];
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
