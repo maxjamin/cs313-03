@@ -23,8 +23,8 @@
 
 <?php
 
-	$product1= $product2 = $product3 = "";
-	$product1Err = $product2Err = $product3Err = "";
+	$product1= $product2 = $product3 = $product4 = "";
+	$product1Err = $product2Err = $product3Err = $product4Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -116,6 +116,36 @@
 			}
 			else
 				{ $product3Err = "Please enter a number"; }
+		
+		}
+
+		/********************************************************************/
+		if(empty($_POST["quantityFour"])) {
+			$product4Err = "Please enter a number";
+		} else {
+			if(!filter_var($_POST["quantityFour"], FILTER_VALIDATE_INT) === false){
+				//collect values of inputs from form
+				$product4 = $_POST["quantityFour"];
+
+				/*Change amount of product add to remaining items if already in cart*/
+				if(($_SESSION["ProductFourQuantity"]) == 0)
+				{
+					$_SESSION["ProductFour"] = "purchased";
+					$_SESSION["ProductFourQuantity"] = $product4;
+				}
+				else
+				{
+					$product = $_SESSION["ProductFourQuantity"];
+					print_r("Add more\n");
+
+					$_SESSION["ProductFourQuantity"] = $product + $product4;
+					$_SESSION["ProductFour"]= "purchased";
+					
+				}
+
+			}
+			else
+				{ $product4Err = "Please enter a number"; }
 		
 		}
 
