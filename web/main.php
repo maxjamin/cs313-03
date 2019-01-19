@@ -18,12 +18,14 @@
 
 
 <?php
+	session_start();
+
 	$product1= $product2 = "";
 	$product1Err = $product2Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		echo "test01";
+		echo "test01 ";
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
