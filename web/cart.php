@@ -41,7 +41,7 @@ session_start();
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
 
-	if($_POST["two"])
+	if($_POST[!empty("two"]))
 		$_SESSION["ProductTwo"] = "notPurchased";
 		$_SESSION["ProductTwoQuantity"]= 0;
 
