@@ -22,21 +22,21 @@
 	$product1Err = "";
 
 
-	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		if(empty($_POST['quantityOne'])) {
-
-		} else {
+			$product1Err = "Please enter a number"
+		/*} else {
 			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
 				//collect values of inputs from form
 				$product1 = $_REQUEST['quantityOne'];
 			}
 			else
 				{ $product1Err = "Please enter a number" }
-
+		*/
 		}
 
-	}*/
+	}
 
 ?>
 
