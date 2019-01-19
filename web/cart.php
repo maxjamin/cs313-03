@@ -8,9 +8,6 @@ session_start();
 	<link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 </head>
 
-
-
-
 <body>
 <h2>Cart</h2>
 

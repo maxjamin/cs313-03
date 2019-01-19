@@ -48,3 +48,12 @@ State:<select name="state">
     	<option value="Wisconsin">Wisconsin</option>
     	<option value="Wyoming">Wyoming</option>
   	</select><br>
+
+
+    Email: <input type="text" name="email"> 
+    <span class="error"><?php echo $emailErr;?></span><br>
+    Adress: <input type="text" name="Address">
+    <span class="error"><?php echo $addressErr;?></span><br>
+    
+    Zip: <input type="text" name="zip"><br>
+    <span class="error"><?php echo $zipErr;?></span>
