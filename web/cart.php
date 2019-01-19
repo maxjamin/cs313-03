@@ -36,10 +36,22 @@ session_start();
 	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
 
 
-
+	//check if removed 
 	if($_POST["one"])
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
+
+	if($_POST["two"])
+		$_SESSION["ProductTwo"] = "notPurchased";
+		$_SESSION["ProductTwoQuantity"]= 0;
+
+	if($_POST["three"])
+		$_SESSION["ProductThree"] = "notPurchased";
+		$_SESSION["ProductThreeQuantity"]= 0;
+
+	if($_POST["four"])
+		$_SESSION["ProductFour"] = "notPurchased";
+		$_SESSION["ProductFourQuantity"]= 0;
 	
 ?>
 
@@ -61,6 +73,9 @@ session_start();
   		if($numberOfProducts02 > 0)
   		{echo $purchased02 . " " . $numberOfProducts02 . " of this product";}
   	?>
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  		<input type="submit" name="two" value="Remove"><br>
+  	</form>
   </div>
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 3</h3>
@@ -68,6 +83,9 @@ session_start();
   		if($numberOfProducts03 > 0)
   		{echo $purchased03 . " " . $numberOfProducts03 . " of this product";}
   	?>
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  		<input type="submit" name="three" value="Remove"><br>
+  	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 4</h3>
@@ -75,6 +93,9 @@ session_start();
   		if($numberOfProducts04 > 0)
   		{echo $purchased04 . " " . $numberOfProducts04 . " of this product";}
   	?>
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  		<input type="submit" name="four" value="Remove"><br>
+  	</form>
   </div>
 </div> 
 
