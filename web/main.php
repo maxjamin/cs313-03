@@ -5,6 +5,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 </head>
 
+
 <body>
 <h2>Prove 03</h2>
 
@@ -17,13 +18,12 @@
 
 
 <?php
-
-	$product1, $product2 = "";
-	$product1Err, $product2Err = "";
+	$product1= $product2 = "";
+	$product1Err = $product2Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		echo "test01 ";
+		echo "test01";
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
