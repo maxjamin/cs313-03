@@ -20,12 +20,12 @@
 	$product1 = "";
 
 
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		//collect values of inputs from form
 		$product1 = $_REQUEST['quantityOne']
 
-	}
+	}*/
 
 ?>
 
