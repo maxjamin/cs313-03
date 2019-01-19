@@ -56,6 +56,7 @@
 .column {
   float: left;
   width: 75%;
+  style="background-color:#ccc;
 }
 
 /* Clear floats after the columns */
@@ -63,4 +64,5 @@
   content: "";
   display: table;
   clear: both;
+  style="background-color:#ccc;
 }
