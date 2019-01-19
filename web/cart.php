@@ -24,11 +24,11 @@ session_start();
 
 	//check if removed 
 	if(!empty($_POST["one"])) {
-		$value = $_SESSION["ProductOneQuantity"];
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
-			$_SESSION["ProductOneQuantity"] = $value;
+			echo "First"
+			//$_POST["oneAdd"] 
 		}
 	}
 	if(!empty($_POST["two"])) {
