@@ -70,7 +70,7 @@ session_start();
 
 	
 ?>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action="confirmation.php">
 
 	Email: <input type="text" name="email"> 
     <span class="error"><?php echo $emailErr;?></span><br>
@@ -140,7 +140,7 @@ echo $email;
 echo $state; */
 ?>
 
-<a href="confirmation.php">Checkout</a> 
+<!--<a href="confirmation.php">Checkout</a> !-->
 
 </body>
 </html>
