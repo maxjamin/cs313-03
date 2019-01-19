@@ -27,7 +27,7 @@ session_start();
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
-			echo "First"
+			echo "First";
 			//$_POST["oneAdd"] 
 		}
 	}
