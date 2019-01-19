@@ -23,8 +23,8 @@ session_start();
 	print_r($_SESSION);
 
 	//first product
-	$numberOfProducts01 = $_SESSION["ProductOne"];
-	$purchased01 = $_SESSION["ProductOneQuantity"];
+	$purchased01 = $_SESSION["ProductOne"];
+	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
 
 ?>
 
