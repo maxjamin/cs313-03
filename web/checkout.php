@@ -61,6 +61,9 @@
 		}
 	}
 
+	echo $email;
+	echo $zip;
+	echo $address;
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
@@ -122,14 +125,6 @@
 	<span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
-
-
-<?php
-echo $email;
-echo $zip;
-echo $address;
-
-?>
 
 </body>
 </html>
