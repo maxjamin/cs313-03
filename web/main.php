@@ -22,7 +22,7 @@
 	$product1Err = "";
 
 
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		if(empty($_POST['quantityOne'])) {
 
@@ -36,10 +36,9 @@
 
 		}
 
-	}
+	}*/
 
 ?>
-
 
 
  <div class="row">
