@@ -114,7 +114,7 @@
     	<option value="West Virginia">West Virginia</option>
     	<option value="Wisconsin">Wisconsin</option>
     	<option value="Wyoming">Wyoming</option>
-  	</select>
+  	</select><br>
 	Zip:<input type="text" name="zip"><br>
 	<span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
