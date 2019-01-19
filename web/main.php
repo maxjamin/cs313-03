@@ -25,20 +25,29 @@
   	<h3>Product 1</h3>
   	<form action="welcome_get.php" method="post">
 		Quantity<input type="text" name="name"><br>
-		<input type="submit">
+		<input type="submit" value="one" name="Add to Cart">
 	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 2</h3>
-  	<button type="button" value="product2" onclick="addProductButton()">Add to Cart</button>
+  	<form action="welcome_get.php" method="post">
+		Quantity<input type="text" name="name"><br>
+		<input type="submit" value="two" name="Add to Cart">
+	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 3</h3>
-  	<button type="button" value="product3" onclick="addProductButton()">Add to Cart</button>
+  	<form action="welcome_get.php" method="post">
+		Quantity<input type="text" name="name"><br>
+		<input type="submit" value="three" name="Add to Cart">
+	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 4</h3>
-  	<button type="button" value="product4" onclick="addProductButton()">Add to Cart</button>
+  	<form action="welcome_get.php" method="post">
+		Quantity<input type="text" name="name"><br>
+		<input type="submit" value="four" name="Add to Cart">
+	</form>
   </div>
 </div> 
 
