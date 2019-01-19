@@ -25,8 +25,9 @@ session_start();
 	//check if removed 
 	if(!empty($_POST["one"])) {
 		$changVal = $_POST["oneAdd"];
+		$checkQuant = $_SESSION["ProductOneQuantity"];
 
-		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
+		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]) && $checkQuant >= 0)
 		{
 			$value = $_SESSION["ProductOneQuantity"];
 
