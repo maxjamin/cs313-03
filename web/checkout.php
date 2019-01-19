@@ -39,7 +39,7 @@
 	  	}
 
 	  	if(empty($_POST["zip"])) {
-			$product1Err = "Please enter a number";
+			$zipErr = "Please enter a number";
 		} else {
 			if(!filter_var($_POST["zip"], FILTER_VALIDATE_INT) === false){
 				//collect values of inputs from form
