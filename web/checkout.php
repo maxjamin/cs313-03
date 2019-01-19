@@ -59,7 +59,7 @@ session_start();
 			}
 		}
 
-		$state = $_POST["state"]
+		$state = $_POST["state"];
 		
 	}
 
