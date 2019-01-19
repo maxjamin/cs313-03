@@ -32,7 +32,7 @@
 				$product1 = $_POST["quantityOne"];
 			}
 			else
-				{ $product1Err = "Please enter a number" }
+				{ $product1Err = "Please enter a number"; }
 		*/
 		}
 
