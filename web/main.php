@@ -27,9 +27,9 @@
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
-			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
+			if(filter_var($_POST["quantityOne"], FILTER_VALIDATE_INT)){
 				//collect values of inputs from form
-				$product1 = $_REQUEST['quantityOne'];
+				$product1 = $_REQUEST["quantityOne"];
 			}
 			else
 				{ $product1Err = "Please enter a number" }
