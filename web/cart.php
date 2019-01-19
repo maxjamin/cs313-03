@@ -26,7 +26,7 @@ session_start();
 	if(!empty($_POST["one"])) {
 		$value = $_SESSION["ProductOneQuantity"];
 
-		if(!empty($_POST["oneAdd"]) || empty($_POST["oneSub"]))
+		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
 			$_SESSION["ProductOneQuantity"] = $value;
 		}
