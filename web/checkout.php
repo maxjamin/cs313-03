@@ -70,5 +70,9 @@ session_start();
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
+<?php
+echo "Test99";
+?>
+
 </body>
 </html>
