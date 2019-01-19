@@ -20,7 +20,7 @@ session_start();
 <h3>Please enter your personal information: </h3>
 
 <?php
-	echo "test01";
+	//echo "test01";
 	$emailErr = $zipErr = $addressErr = "";
 	$email = $zip = $address = "";
 
@@ -32,11 +32,11 @@ session_start();
 
 	  	}else {
 		    $email = $_POST["email"];
-		    echo "test03";
+		    //echo "test03";
 
 		    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		      $emailErr = "Invalid email";
-		      echo "test04";
+		      //echo "test04";
 		    }
 	  	}
 
@@ -126,9 +126,10 @@ session_start();
 </form>
 
 <?php
-echo "Test99  ";
+echo "Test010  ";
 echo $zip;
 echo $address;
+echo $email;
 ?>
 
 </body>
