@@ -65,15 +65,14 @@ session_start();
 
 	
 ?>
-<?php echo $zip; ?>
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
-	Email:<input type="text" name="email"> 
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+	Email: <input type="text" name="email"> 
 	<span class="error"><?php echo $emailErr;?></span><br>
-	Adress:<input type="text" name="Address">
+	Adress: <input type="text" name="Address">
 	<span class="error"><?php echo $addressErr;?></span><br>
 	
-	Zip:<input type="text" name="zip"><br>
+	Zip: <input type="text" name="zip"><br>
 	<span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
