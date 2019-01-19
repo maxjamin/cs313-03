@@ -20,24 +20,6 @@ session_start();
 
 <?php
 	print_r($_SESSION);
-
-	testplace();
-
-	//first product
-	$purchased01 = $_SESSION["ProductOne"];
-	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
-	//second product
-	$purchased02 = $_SESSION["ProductTwo"];
-	$numberOfProducts02 = $_SESSION["ProductTwoQuantity"];
-	//third product
-	$purchased03 = $_SESSION["ProductThree"];
-	$numberOfProducts03 = $_SESSION["ProductThreeQuantity"];
-	//fourth product
-	$purchased04 = $_SESSION["ProductFour"];
-	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
-	testplace();
-	testplace();
-
 	function testplace(){
 
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -60,6 +42,19 @@ session_start();
 			}
 		}
 	}
+	//first product
+	$purchased01 = $_SESSION["ProductOne"];
+	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
+	//second product
+	$purchased02 = $_SESSION["ProductTwo"];
+	$numberOfProducts02 = $_SESSION["ProductTwoQuantity"];
+	//third product
+	$purchased03 = $_SESSION["ProductThree"];
+	$numberOfProducts03 = $_SESSION["ProductThreeQuantity"];
+	//fourth product
+	$purchased04 = $_SESSION["ProductFour"];
+	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
+
 
 ?>
 
