@@ -36,6 +36,7 @@ session_start();
 	$purchased04 = $_SESSION["ProductFour"];
 	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
 	testplace();
+	testplace();
 
 	function testplace(){
 
