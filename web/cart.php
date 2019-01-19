@@ -23,8 +23,8 @@ session_start();
 	print_r($_SESSION);
 
 	//first product
-	$numberOfProducts = $_SESSION["ProductOne"];
-	$purchased = $_SESSION["ProductOneQuantity"];
+	$numberOfProducts01 = $_SESSION["ProductOne"];
+	$purchased01 = $_SESSION["ProductOneQuantity"];
 
 ?>
 
@@ -33,8 +33,10 @@ session_start();
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
   	<?php
-  	echo $numberOfProducts;
-  	echo $purchased;
+  	if($numberOfProducts01 > 0)
+  	{
+  		echo $purchased01 . " " . $numberOfProducts01 . " of this product";
+  	}
 
   	?>
   </div>
