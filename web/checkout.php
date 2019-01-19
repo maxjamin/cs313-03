@@ -22,7 +22,7 @@ session_start();
 <?php
 	//echo "test01";
 	$emailErr = $zipErr = $addressErr = "";
-	$email = $zip = $address = "";
+	$email = $zip = $address = $state = "";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -58,8 +58,15 @@ session_start();
 				$zip = $_POST["zip"];
 			}
 		}
+
+		$state = $_POST["state"]
 		
 	}
+
+	$_SESSION["address"] = $address;
+	$_SESSION["zip"] = $zip;
+	$_SESSION["email"] = $email;
+	$_SESSION["state"] = $state;
 
 	
 ?>
@@ -130,6 +137,7 @@ echo "Test010  ";
 echo $zip;
 echo $address;
 echo $email;
+echo $state;
 ?>
 
 </body>
