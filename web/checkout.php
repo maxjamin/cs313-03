@@ -20,7 +20,7 @@ session_start();
 <h3>Please enter your personal information: </h3>
 
 <?php
-
+	echo "test01"
 	$emailErr = $zipErr = $addressErr = "";
 	$email = $zip = $address = "";
 
@@ -60,11 +60,13 @@ session_start();
 				$zip = $_POST["zip"];
 			}
 		}
-		echo $email;
+		
 	}
 
 	
 ?>
+<p>This is a test</p>
+<?php echo "<h2 your input:</h2>"; ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 	Email:<input type="text" name="email"> 
@@ -76,11 +78,6 @@ session_start();
 	<span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
-
-<p>This is a test</p>
-<?php echo "<h2 your input:</h2>"; ?>
-
-
 
 </body>
 </html>
