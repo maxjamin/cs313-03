@@ -27,20 +27,20 @@ session_start();
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
 	}
-	if($_POST["two"]) {
+	if(!empty($_POST["two"])) {
 		$_SESSION["ProductTwo"] = "notPurchased";
 		$_SESSION["ProductTwoQuantity"]= 0;
 	}
-	if($_POST["three"]) {
+	if(!empty($_POST["three"])) {
 		$_SESSION["ProductThree"] = "notPurchased";
 		$_SESSION["ProductThreeQuantity"]= 0;
 	}
-	if($_POST["four"]) {
+	if(!empty($_POST["four"])) {
 		$_SESSION["ProductFour"] = "notPurchased";
 		$_SESSION["ProductFourQuantity"]= 0;
 	}
 
-		//first product
+	//first product
 	$purchased01 = $_SESSION["ProductOne"];
 	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
 	//second product
