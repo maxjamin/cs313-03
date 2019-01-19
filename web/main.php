@@ -23,7 +23,10 @@
  <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
-  	<button type="button" value="product1" onclick="addProductButton()">Add to Cart</button>
+  	<form action="welcome_get.php" method="post">
+		Quantity<input type="text" name="name"><br>
+		<input type="submit">
+	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 2</h3>
@@ -31,11 +34,11 @@
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 3</h3>
-  	<button type="button" value="product2" onclick="addProductButton()">Add to Cart</button>
+  	<button type="button" value="product3" onclick="addProductButton()">Add to Cart</button>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 4</h3>
-  	<button type="button" value="product2" onclick="addProductButton()">Add to Cart</button>
+  	<button type="button" value="product4" onclick="addProductButton()">Add to Cart</button>
   </div>
 </div> 
 
