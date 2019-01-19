@@ -36,7 +36,6 @@
 				//collect values of inputs from form
 				$product1 = $_POST["quantityOne"];
 
-				echo($product1);
 				/*Change amount of product add to remaining items if already in cart*/
 				if(($_SESSION["ProductOneQuantity"]) == 0)
 				{
@@ -59,6 +58,37 @@
 		
 		}
 
+		/********************************************************************/
+		if(empty($_POST["quantityTwo"])) {
+			$product2Err = "Please enter a number";
+		} else {
+			if(!filter_var($_POST["quantityTwo"], FILTER_VALIDATE_INT) === false){
+				//collect values of inputs from form
+				$product2 = $_POST["quantityTwo"];
+
+				/*Change amount of product add to remaining items if already in cart*/
+				if(($_SESSION["ProductTwoQuantity"]) == 0)
+				{
+					$_SESSION["ProductTwo"] = "purchased";
+					$_SESSION["ProductTwoQuantity"] = $product2;
+				}
+				else
+				{
+					$product = $_SESSION["ProductTwoQuantity"];
+					print_r("Add more\n");
+
+					$_SESSION["ProductTwoQuantity"] = $product + $product2;
+					$_SESSION["ProductTwo"]= "purchased";
+					
+				}
+
+			}
+			else
+				{ $product2Err = "Please enter a number"; }
+		
+		}
+
+
 	}
 	print_r($_SESSION);
 
@@ -76,9 +106,10 @@
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 2</h3>
-  	<form action="welcome_get.php" method="post">
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityTwo"><br>
 		<input type="submit" name="two" name="Add to Cart">
+		<span class="error"><?php echo $product2Err;?></span>
 	</form>
   </div>
   <div class="column" style="background-color:#ccc;">
