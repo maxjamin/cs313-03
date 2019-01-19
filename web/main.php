@@ -33,7 +33,7 @@
 			}
 			else
 				{ $product1Err = "Please enter a number"; }
-		*/
+		
 		}
 
 	}
