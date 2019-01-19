@@ -77,8 +77,6 @@ session_start();
   		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-  		Add Amount:<input type="text" name="oneAdd" value="">
-  		Sub Amount<input type="text" name="oneSub" value="">
   		<input type="submit" name="one" value="Change"><br>
   	</form>
   </div>
