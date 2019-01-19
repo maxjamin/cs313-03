@@ -24,7 +24,7 @@ session_start();
 
 	//first product
 	$numberOfProducts = $_SESSION["ProductOne"];
-	$purchased = $_SESSION["ProductOneQuantity"]
+	$purchased = $_SESSION["ProductOneQuantity"];
 
 ?>
 
@@ -33,7 +33,7 @@ session_start();
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
   	<?php
-  	echo $numberOfProducts
+  	echo $numberOfProducts;
   	echo $purchased;
 
   	?>
