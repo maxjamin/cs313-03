@@ -45,6 +45,7 @@
 				//collect values of inputs from form
 				$zip = $_POST["zip"];
 			}
+		}
 	}
 
 ?>
