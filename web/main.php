@@ -23,8 +23,8 @@
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-		if(empty($_POST['quantityOne'])) {
+		echo "test01";
+		/*if(empty($_POST['quantityOne'])) {
 			$product1Err = "Please enter a number"
 		} else {
 			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
@@ -34,7 +34,7 @@
 			else
 				{ $product1Err = "Please enter a number" }
 		
-		}
+		}*/
 
 	}
 
