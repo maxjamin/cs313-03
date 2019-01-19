@@ -27,7 +27,8 @@
 
 		//check email for address
 		if (empty($_POST["email"])) {
-	    $emailErr = "Please enter your email";
+	    	$emailErr = "Please enter your email";
+	    	$email = "";
 	  	}else {
 		    $email = test_input($_POST["email"]);
 		    echo "test03";
@@ -41,6 +42,7 @@
 	  	//check address for value
 	  	if(empty($_POST["address"])){
 	  		$addressErr = "Please enter an adress";
+	  		$address = "";
 	  	}
 	  	else{
 	  		$address = test_input($_POST["address"]);
@@ -50,6 +52,7 @@
 	  	//check zip for value
 	  	if(empty($_POST["zip"])) {
 			$zipErr = "Please enter a zip";
+			$zip = "";
 		} else {
 			if(!filter_var($_POST["zip"], FILTER_VALIDATE_INT) === false){
 				//collect values of inputs from form
