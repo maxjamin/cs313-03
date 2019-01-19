@@ -37,7 +37,7 @@ session_start();
 
 
 	//check if removed 
-	if($_POST["one"]) {
+	if(!empty($_POST["one"])) {
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
 	}
