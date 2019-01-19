@@ -1,6 +1,8 @@
 <?php
 	//starting session
 	session_start();
+	$_SESSION["ProductOne"]= "notPurchased";
+	$_SESSION["ProductOneQuantity"] = 0;
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,8 +39,20 @@
 				$product1 = $_POST["quantityOne"];
 
 				echo($product1);
-				$_SESSION["ProductOne"]= "purchase";
-				$_SESSION["ProductOneQuantity"] = $product1;
+				/*Change amount of product add to remaining items if already in cart*/
+				if($_SESSION["ProductOne"] == 0)
+				{
+					$_SESSION["ProductOne"]= "purchased";
+					$_SESSION["ProductOneQuantity"] = $product1;
+				}
+				else
+				{
+					$product = $_SESSION["ProductOneQuantity"]
+
+					$_SESSION["ProductOneQuantity"] = $product + $product1;
+					$_SESSION["ProductOne"]= "purchased";
+					
+				}
 
 			}
 			else
