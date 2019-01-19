@@ -45,7 +45,7 @@ session_start();
 	  		$addressErr = "Please enter an adress";
 	  	}
 	  	else{
-	  		$address = $_POST["address"]);
+	  		$address = $_POST["address"];
 	  	}
 
 
