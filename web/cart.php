@@ -37,22 +37,22 @@ session_start();
 
 
 	//check if removed 
-	if($_POST["one"])
+	if($_POST["one"]) {
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
-
-	if($_POST[!empty("two"]))
+	}
+	if($_POST["two"]) {
 		$_SESSION["ProductTwo"] = "notPurchased";
 		$_SESSION["ProductTwoQuantity"]= 0;
-
-	if($_POST["three"])
+	}
+	if($_POST["three"]) {
 		$_SESSION["ProductThree"] = "notPurchased";
 		$_SESSION["ProductThreeQuantity"]= 0;
-
-	if($_POST["four"])
+	}
+	if($_POST["four"]) {
 		$_SESSION["ProductFour"] = "notPurchased";
 		$_SESSION["ProductFourQuantity"]= 0;
-	
+	}
 ?>
 
 
