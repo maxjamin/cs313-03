@@ -78,7 +78,7 @@ session_start();
 </form>
 
 <p>This is a test</p>
-<?php echo $email;?>
+<?php echo "<h2 your input:</h2>"; ?>
 
 
 
