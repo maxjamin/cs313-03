@@ -48,6 +48,7 @@
 				else
 				{
 					$product = $_SESSION["ProductOneQuantity"];
+					print_r("Add more\n");
 
 					$_SESSION["ProductOneQuantity"] = $product + $product1;
 					$_SESSION["ProductOne"]= "purchased";
