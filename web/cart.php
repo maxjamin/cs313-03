@@ -77,7 +77,7 @@ session_start();
   		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-  		<input type="submit" name="one" value="Change"><br>
+  		<input type="submit" name="one" value="Remove"><br>
   	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
