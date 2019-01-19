@@ -22,12 +22,21 @@ session_start();
 <?php
 	print_r($_SESSION);
 
+	//first product
+	$numberOfProducts = $_SESSION["ProductOne"];
+	$purchased = $_SESSION["ProductOneQuantity"]
+
 ?>
 
 
 <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
+  	<?php
+  	echo $numberOfProducts
+  	echo $purchased;
+
+  	?>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 2</h3>
