@@ -31,7 +31,7 @@ session_start();
 	    	$emailErr = "Please enter your email";
 
 	  	}else {
-		    $email = test_input($_POST["email"]);
+		    $email = $_POST["email"];
 		    echo "test03";
 
 		    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
