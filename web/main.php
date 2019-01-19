@@ -14,7 +14,7 @@
 <h2>Prove 03</h2>
 
 <div class="navbar">
-  <a href="main.html">Home</a>
+  <a href="main.php">Home</a>
   <a href="cart.html">Cart</a>
   <a href="checkout.html">Checkout</a> 
 </div>
