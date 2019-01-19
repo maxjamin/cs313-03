@@ -20,26 +20,24 @@ session_start();
 
 <?php
 	print_r($_SESSION);
-	function testplace(){
 
-		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-			//check if removed 
-			if(isset($_POST["one"])) {
-				$_SESSION["ProductOne"] = "notPurchased";
-				$_SESSION["ProductOneQuantity"]= 0;
-			}
-			if(isset($_POST["two"])) {
-				$_SESSION["ProductTwo"] = "notPurchased";
-				$_SESSION["ProductTwoQuantity"]= 0;
-			}
-			if(isset($_POST["three"])) {
-				$_SESSION["ProductThree"] = "notPurchased";
-				$_SESSION["ProductThreeQuantity"]= 0;
-			}
-			if(isset($_POST["four"])) {
-				$_SESSION["ProductFour"] = "notPurchased";
-				$_SESSION["ProductFourQuantity"]= 0;
-			}
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		//check if removed 
+		if(isset($_POST["one"])) {
+			$_SESSION["ProductOne"] = "notPurchased";
+			$_SESSION["ProductOneQuantity"]= 0;
+		}
+		if(isset($_POST["two"])) {
+			$_SESSION["ProductTwo"] = "notPurchased";
+			$_SESSION["ProductTwoQuantity"]= 0;
+		}
+		if(isset($_POST["three"])) {
+			$_SESSION["ProductThree"] = "notPurchased";
+			$_SESSION["ProductThreeQuantity"]= 0;
+		}
+		if(isset($_POST["four"])) {
+			$_SESSION["ProductFour"] = "notPurchased";
+			$_SESSION["ProductFourQuantity"]= 0;
 		}
 	}
 	//first product
@@ -54,8 +52,6 @@ session_start();
 	//fourth product
 	$purchased04 = $_SESSION["ProductFour"];
 	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
-
-
 ?>
 
 
