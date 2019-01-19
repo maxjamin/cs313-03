@@ -56,6 +56,7 @@
 	Adress:<input type="text" name="Adress"><br>
 	State<input type="text" name="State"><br>
 	Zip:<input type="text" name="zip"><br>
+	<span class="error"><?php echo $zipErr;?></span><br>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
