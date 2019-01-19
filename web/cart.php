@@ -9,6 +9,8 @@ session_start();
 </head>
 
 
+
+
 <body>
 <h2>Cart</h2>
 
@@ -22,9 +24,7 @@ session_start();
 <?php
 	print_r($_SESSION);
 
-	//check if removed 
-	if(!empty($_POST["one"])) {
-		$changVal = $_POST["oneAdd"];
+	/*		$changVal = $_POST["oneAdd"];
 		$checkQuant = $_SESSION["ProductOneQuantity"];
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]) && $checkQuant >= 0) {
@@ -33,7 +33,13 @@ session_start();
 		}if(!empty($_POST["oneSub"]) && empty($_POST["oneAdd"]) && $checkQuant >= 0) {
 			$value = $_SESSION["ProductOneQuantity"];
 			$_SESSION["ProductOneQuantity"] = $changVal - $value;
-		}
+		}*/
+
+
+	//check if removed 
+	if(!empty($_POST["one"])) {
+		$_SESSION["ProductOne"] = "notPurchased";
+		$_SESSION["ProductOneQuantity"]= 0;
 	}
 	if(!empty($_POST["two"])) {
 		$_SESSION["ProductTwo"] = "notPurchased";
