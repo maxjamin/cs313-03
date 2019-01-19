@@ -67,6 +67,8 @@ session_start();
 ?>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
+	Adress: <input type="text" name="Address">
+    <span class="error"><?php echo $addressErr;?></span><br>
 	Zip: <input type="text" name="zip"><br>
     <span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
@@ -75,6 +77,7 @@ session_start();
 <?php
 echo "Test99";
 echo $zip;
+echo $address;
 ?>
 
 </body>
