@@ -28,7 +28,7 @@
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		echo "test01 ";
+
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
@@ -36,6 +36,7 @@
 				//collect values of inputs from form
 				$product1 = $_POST["quantityOne"];
 				echo($product1);
+				$_SESSION["ProductOne"]= {1, $product1};
 			}
 			else
 				{ $product1Err = "Please enter a number"; }
