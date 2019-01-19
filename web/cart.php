@@ -28,9 +28,7 @@ session_start();
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
-			echo $changVal;
-			
-
+			$_SESSION["ProductOneQuantity"] += $changVal;
 		}
 	}
 	if(!empty($_POST["two"])) {
