@@ -20,7 +20,6 @@
 .column {
   float: left;
   width: 75%;
-  background-color:#ccc;
 }
 
 /* Clear floats after the columns */
@@ -28,5 +27,4 @@
   content: "";
   display: table;
   clear: both;
-  background-color:#ddd;
 }
