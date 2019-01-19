@@ -21,26 +21,13 @@ session_start();
 <?php
 	print_r($_SESSION);
 
-	//first product
-	$purchased01 = $_SESSION["ProductOne"];
-	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
-	//second product
-	$purchased02 = $_SESSION["ProductTwo"];
-	$numberOfProducts02 = $_SESSION["ProductTwoQuantity"];
-	//third product
-	$purchased03 = $_SESSION["ProductThree"];
-	$numberOfProducts03 = $_SESSION["ProductThreeQuantity"];
-	//fourth product
-	$purchased04 = $_SESSION["ProductFour"];
-	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
-
 
 	//check if removed 
 	if(!empty($_POST["one"])) {
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
 	}
-	if(!empty($_POST["two"])) {
+	if(empty($_POST["two"])) {
 		$_SESSION["ProductTwo"] = "notPurchased";
 		$_SESSION["ProductTwoQuantity"]= 0;
 	}
@@ -53,6 +40,18 @@ session_start();
 		$_SESSION["ProductFourQuantity"]= 0;
 	}
 
+	//first product
+	$purchased01 = $_SESSION["ProductOne"];
+	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
+	//second product
+	$purchased02 = $_SESSION["ProductTwo"];
+	$numberOfProducts02 = $_SESSION["ProductTwoQuantity"];
+	//third product
+	$purchased03 = $_SESSION["ProductThree"];
+	$numberOfProducts03 = $_SESSION["ProductThreeQuantity"];
+	//fourth product
+	$purchased04 = $_SESSION["ProductFour"];
+	$numberOfProducts04 = $_SESSION["ProductFourQuantity"];
 ?>
 
 
