@@ -23,7 +23,7 @@
  <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
-  	<form action="welcome_get.php" method="post">
+  	<form action="htmlspecialchars($_SERVER["PHP_SELF"])" method="post">
 		Quantity<input type="text" name="name"><br>
 		<input type="submit" value="one" name="Add to Cart">
 	</form>
