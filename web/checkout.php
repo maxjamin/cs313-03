@@ -62,7 +62,7 @@
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 	Email:<input type="text" name="email" >
 	<span class="error"><?php echo $emailErr;?></span><br>
-	Adress:<input type="text" name="Address"><br>
+	Adress:<input type="text" name="Address">
 	<span class="error"><?php echo $addressErr;?></span><br>
 	State<input type="text" name="State"><br>
 	Zip:<input type="text" name="zip"><br>
