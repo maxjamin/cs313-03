@@ -20,6 +20,16 @@
 </div>
 <br>
 
+<?php
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+		//collect values of inputs from form
+		$product1 = $_REQUEST['quantityOne']
+		console.log($product1);
+	}
+
+?>
 
  <div class="row">
   <div class="column" style="background-color:#ccc;">
