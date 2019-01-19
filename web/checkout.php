@@ -51,12 +51,12 @@
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
-	Email:<input type="text" name="email" ><br>
+	Email:<input type="text" name="email" >
 	<span class="error"><?php echo $emailErr;?></span><br>
 	Adress:<input type="text" name="Adress"><br>
 	State<input type="text" name="State"><br>
 	Zip:<input type="text" name="zip"><br>
-	<span class="error"><?php echo $zipErr;?></span><br>
+	<span class="error"><?php echo $zipErr;?></span>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
