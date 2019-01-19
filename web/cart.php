@@ -24,14 +24,11 @@ session_start();
 
 	//check if removed 
 	if(!empty($_POST["one"])) {
+		$value = $_SESSION["ProductOneQuantity"];
 
-		if(!empty($_POST["oneAdd"])) {
-			$value = $_SESSION["ProductOneQuantity"];
-			$_SESSION["ProductOneQuantity"] = value + 1;
-		}
-		if(!empty($_POST["oneSub"])) {
-			$value = $_SESSION["ProductOneQuantity"];
-			$_SESSION["ProductOneQuantity"] = value - 1;
+		if(!empty($_POST["oneAdd"]) || empty($_POST["oneSub"]))
+		{
+			$_SESSION["ProductOneQuantity"] = $value;
 		}
 	}
 	if(!empty($_POST["two"])) {
@@ -70,9 +67,8 @@ session_start();
   		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-  		<input type="submit" name="oneAdd" value="add"><br>
-  		<input type="submit" name="oneSub" value="sub"><br>
-
+  		<input type="text" name="oneAdd" value="Add Amount">
+  		<input type="text" name="oneSub" value="Sub Amount">
   		<input type="submit" name="one" value="Change"><br>
   	</form>
   </div>
