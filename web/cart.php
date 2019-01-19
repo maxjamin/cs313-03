@@ -26,11 +26,13 @@ session_start();
 	$purchased01 = $_SESSION["ProductOne"];
 	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
 
-	function removeOne(){
+?>
+
+<?php
+function removeOne(){
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
 	}
-
 ?>
 
 
@@ -38,8 +40,8 @@ session_start();
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
   	<?php
-  	if($numberOfProducts01 > 0)
-  	{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
+  		if($numberOfProducts01 > 0)
+  		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
   	<button type="button" onclick="removeOne()">Remove</button> 
 
