@@ -23,8 +23,8 @@
 	$emailErr = "";
 	$email = "";
 
-	echo "Test01";
 	if (empty($_POST["email"])) {
+		echo "test02";
     $emailErr = "Email is required";
   } else {
     	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
