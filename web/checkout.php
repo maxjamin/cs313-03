@@ -23,6 +23,7 @@
 	$emailErr = "";
 	$email = "";
 
+	echo "Test01";
 	if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
