@@ -45,9 +45,9 @@
 					$_SESSION["ProductOne"] = "purchased";
 					$_SESSION["ProductOneQuantity"] = $product1;
 				}
-				/*else
+				else
 				{
-					$product = $_SESSION["ProductOneQuantity"]
+					$product = $_SESSION["ProductOneQuantity"];
 
 					$_SESSION["ProductOneQuantity"] = $product + $product1;
 					$_SESSION["ProductOne"]= "purchased";
