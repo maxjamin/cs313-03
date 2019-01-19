@@ -20,31 +20,41 @@
 
 <?php
 
-	$emailErr = "";
-	$email = "";
+	$emailErr = $zipErr = "";
+	$email= $zip = "";
 
-	if (empty($_POST["email"])) {
-		echo "test02";
-    $emailErr = "Email is required";
-  }  else {
-    $email = test_input($_POST["email"]);
-    echo "test03";
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-      echo "test04";
-    }
-  }
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+		if (empty($_POST["email"])) {
+			echo "test02";
+	    $emailErr = "Email is required";
+	  	}else {
+		    $email = test_input($_POST["email"]);
+		    echo "test03";
+
+		    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		      $emailErr = "Invalid email";
+		      echo "test04";
+		    }
+	  	}
+
+	  	if(empty($_POST["zip"])) {
+			$product1Err = "Please enter a number";
+		} else {
+			if(!filter_var($_POST["zip"], FILTER_VALIDATE_INT) === false){
+				//collect values of inputs from form
+				$zip = $_POST["zip"];
+			}
+	}
 
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 	Email:<input type="text" name="email" ><br>
-	<span class="error"><?php echo $emailErr;?></span>
+	<span class="error"><?php echo $emailErr;?></span><br>
 	Adress:<input type="text" name="Adress"><br>
-	State<input type="text" name="quantityOne"><br>
-	Zip:<input type="text" name="quantityOne"><br>
+	State<input type="text" name="State"><br>
+	Zip:<input type="text" name="zip"><br>
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
