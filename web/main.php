@@ -35,8 +35,11 @@
 			if(!filter_var($_POST["quantityOne"], FILTER_VALIDATE_INT) === false){
 				//collect values of inputs from form
 				$product1 = $_POST["quantityOne"];
+
 				echo($product1);
-				$_SESSION["ProductOne"]= {1, $product1};
+				$_SESSION["ProductOne"]= "purchase";
+				$_SESSION["ProductOneQuantity"] = $product1;
+
 			}
 			else
 				{ $product1Err = "Please enter a number"; }
