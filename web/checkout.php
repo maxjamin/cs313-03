@@ -126,6 +126,7 @@ session_start();
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
+<p>This is a test</p>
 <?php echo $address;?>
 
 
