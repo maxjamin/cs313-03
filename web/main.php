@@ -1,10 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 </head>
-
 
 <body>
 <h2>Prove 03</h2>
@@ -18,12 +20,12 @@
 
 
 <?php
-	$product1 = "";
-	$product1Err = "";
+	$product1, $product2 = "";
+	$product1Err, $product2Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		echo "test01";
+		echo "test01 ";
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
@@ -48,7 +50,7 @@
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityOne"><br>
 		<input type="submit" name="one" name="Add to Cart"><br>
-		<span class="error">* <?php echo $product1Err;?></span>
+		<span class="error"><?php echo $product1Err;?></span>
 	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
