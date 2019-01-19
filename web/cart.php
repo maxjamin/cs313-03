@@ -40,7 +40,7 @@ session_start();
   		if($numberOfProducts01 > 0)
   		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
-  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+  	<form method="post" action="cart.php" >
 		<button type="button" onclick="removeOne()">Remove</button> 
 	</form>
   </div>
