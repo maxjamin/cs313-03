@@ -47,8 +47,8 @@
   	<h3>Product 1</h3>
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityOne"><br>
+		<input type="submit" name="one" name="Add to Cart"><br>
 		<span class="error">* <?php echo $product1Err;?></span>
-		<input type="submit" name="one" name="Add to Cart">
 	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
