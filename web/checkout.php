@@ -45,7 +45,7 @@ session_start();
 	  		$addressErr = "Please enter an adress";
 	  	}
 	  	else{
-	  		$address = test_input($_POST["address"]);
+	  		$address = $_POST["address"]);
 	  	}
 
 
@@ -64,6 +64,9 @@ session_start();
 	
 ?>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+	Adress: <input type="text" name="address">
+    <span class="error"><?php echo $addressErr;?></span><br>
 
 	Zip: <input type="text" name="zip"><br>
     <span class="error"><?php echo $zipErr;?></span>
