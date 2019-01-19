@@ -21,6 +21,7 @@
   	<h3>Product 1</h3>
   	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityOne"><br>
+		<span class="error">* <?php echo $product1Err;?></span>
 		<input type="submit" name="one" name="Add to Cart">
 	</form>
   </div>
@@ -31,7 +32,7 @@
 		<input type="submit" name="two" name="Add to Cart">
 	</form>
   </div>
-  <div class="column" style="background-color:#ddd;">
+  <div class="column" style="background-color:#ccc;">
   	<h3>Product 3</h3>
   	<form action="welcome_get.php" method="post">
 		Quantity<input type="text" name="quantityThree"><br>
@@ -50,6 +51,7 @@
 
 <?php
 	$product1 = "";
+	$product1Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -57,13 +59,15 @@
 		if(empty($_POST['quantityOne'])) {
 
 		} else {
-			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT))
-				echo("Found a number");
+			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
+				//collect values of inputs from form
+				$product1 = $_REQUEST['quantityOne'];
+			}
+			else
+				{ $product1Err = "Please enter a number" }
 
 		}
 
-		//collect values of inputs from form
-		$product1 = $_REQUEST['quantityOne'];
 	}
 
 ?>
