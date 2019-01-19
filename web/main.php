@@ -58,7 +58,7 @@
 		$product1 = $_REQUEST['quantityOne'];
 
 	}
-
+	echo $product1;
 ?>
 
 
