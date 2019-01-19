@@ -26,10 +26,10 @@ session_start();
 	$purchased01 = $_SESSION["ProductOne"];
 	$numberOfProducts01 = $_SESSION["ProductOneQuantity"];
 
-	function removeOne(){
+	if($_POST["one"])
 		$_SESSION["ProductOne"] = "notPurchased";
 		$_SESSION["ProductOneQuantity"]= 0;
-	}
+	
 ?>
 
 
@@ -40,9 +40,11 @@ session_start();
   		if($numberOfProducts01 > 0)
   		{echo $purchased01 . " " . $numberOfProducts01 . " of this product";}
   	?>
-  	<form method="post" action="cart.php" >
-		<button type="button" onclick="removeOne()">Remove</button> 
-	</form>
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  		<input type="submit" name="one" name="Remove"><br>
+  	</form>
+
+
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 2</h3>
