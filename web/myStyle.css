@@ -51,3 +51,16 @@
   display: block;
   text-align: left;
 }
+
+
+.column {
+  float: left;
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
