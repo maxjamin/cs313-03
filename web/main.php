@@ -40,9 +40,9 @@
 
 				echo($product1);
 				/*Change amount of product add to remaining items if already in cart*/
-				if($_SESSION["ProductOne"] == 0)
+				if(($_SESSION["ProductOneQuantity"]) == 0)
 				{
-					$_SESSION["ProductOne"]= "purchased";
+					$_SESSION["ProductOne"] = "purchased";
 					$_SESSION["ProductOneQuantity"] = $product1;
 				}
 				else
