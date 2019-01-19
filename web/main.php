@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +17,8 @@ session_start();
 
 
 <?php
+	session_start();
+
 	$product1, $product2 = "";
 	$product1Err, $product2Err = "";
 
