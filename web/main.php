@@ -1,8 +1,6 @@
 <?php
 	//starting session
 	session_start();
-	$_SESSION["ProductOne"]= "notPurchased";
-	$_SESSION["ProductOneQuantity"] = 0;
 ?>
 <!DOCTYPE html>
 <html>
