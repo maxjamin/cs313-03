@@ -59,11 +59,10 @@
 				$zip = $_POST["zip"];
 			}
 		}
+		echo $email;
 	}
 
-	echo $email;
-	echo $zip;
-	echo $address;
+	
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
