@@ -67,7 +67,7 @@ session_start();
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
-	Email:<input type="text" name="email" >
+	Email:<input type="text" name="email" > 
 	<span class="error"><?php echo $emailErr;?></span><br>
 	Adress:<input type="text" name="Address">
 	<span class="error"><?php echo $addressErr;?></span><br>
@@ -123,7 +123,7 @@ session_start();
   	</select><br>
 	Zip:<input type="text" name="zip"><br>
 	<span class="error"><?php echo $zipErr;?></span>
-	<input type="submit" name="one" name="Add to Cart"><br>
+	<input type="submit" name="one" name="Add to Cart"></<br>
 </form>
 
 <p>This is a test</p>
