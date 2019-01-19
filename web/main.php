@@ -16,19 +16,6 @@
 </div>
 <br>
 
-<?php
-	$product1 = "";
-
-
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-		//collect values of inputs from form
-		/*$product1 = $_REQUEST['quantityOne']*/
-
-	}
-
-?>
-
  <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
@@ -60,9 +47,20 @@
   </div>
 </div> 
 
+
 <?php
-echo $product1;
+	$product1 = "";
+
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+		//collect values of inputs from form
+		$product1 = $_REQUEST['quantityOne'];
+
+	}
+
 ?>
+
 
 </body>
 </html>
