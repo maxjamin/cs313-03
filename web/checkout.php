@@ -32,6 +32,7 @@
     // check if e-mail address is well-formed
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format";
+      echo "test04"
     }
   }
 
