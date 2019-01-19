@@ -30,6 +30,7 @@
 			if(!filter_var($_POST["quantityOne"], FILTER_VALIDATE_INT) === false){
 				//collect values of inputs from form
 				$product1 = $_POST["quantityOne"];
+				echo ("Is a number", $product1);
 			}
 			else
 				{ $product1Err = "Please enter a number"; }
