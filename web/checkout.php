@@ -65,8 +65,7 @@ session_start();
 
 	
 ?>
-<p>This is a test</p>
-<?php echo "<h2 your input:</h2>"; ?>
+<?php echo $zip; ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 	Email:<input type="text" name="email"> 
