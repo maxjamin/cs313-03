@@ -1,11 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 </head>
-
-
 <body>
 <h2>Checkout</h2>
 
@@ -21,7 +22,7 @@
 <?php
 
 	$emailErr = $zipErr = $addressErr = "";
-	$email= $zip = $address = "";
+	$email = $zip = $address = "";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
