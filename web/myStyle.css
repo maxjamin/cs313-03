@@ -16,15 +16,3 @@
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
-
-.column {
-  float: left;
-  width: 75%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
