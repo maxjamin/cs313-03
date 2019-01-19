@@ -31,7 +31,8 @@
       		echo "Error";
     	}
     	else
-    	{ $email = test_input($_POST["email"]); }
+    	{	echo "It worked";
+    		$email = test_input($_POST["email"]); }
   }
 
 
