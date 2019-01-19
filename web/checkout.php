@@ -20,7 +20,7 @@ session_start();
 <h3>Please enter your personal information: </h3>
 
 <?php
-	echo "test01"
+	echo "test01";
 	$emailErr = $zipErr = $addressErr = "";
 	$email = $zip = $address = "";
 
