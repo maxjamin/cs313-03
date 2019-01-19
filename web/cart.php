@@ -27,11 +27,12 @@ session_start();
 		$changVal = $_POST["oneAdd"];
 		$checkQuant = $_SESSION["ProductOneQuantity"];
 
-		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]) && $checkQuant >= 0)
-		{
+		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]) && $checkQuant >= 0) {
 			$value = $_SESSION["ProductOneQuantity"];
-
 			$_SESSION["ProductOneQuantity"] = $changVal + $value;
+		}if(!empty($_POST["oneSub"]) && empty($_POST["oneAdd"]) && $checkQuant >= 0) {
+			$value = $_SESSION["ProductOneQuantity"];
+			$_SESSION["ProductOneQuantity"] = $changVal - $value;
 		}
 	}
 	if(!empty($_POST["two"])) {
