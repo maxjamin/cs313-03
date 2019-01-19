@@ -20,19 +20,19 @@
 	$product1 = "";
 
 
-	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		//collect values of inputs from form
-		$product1 = $_REQUEST['quantityOne']
+		/*$product1 = $_REQUEST['quantityOne']*/
 
-	}*/
+	}
 
 ?>
 
  <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
-  	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityOne"><br>
 		<input type="submit" name="one" name="Add to Cart">
 	</form>
