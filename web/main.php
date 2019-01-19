@@ -54,9 +54,16 @@
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+		if(empty($_POST['quantityOne'])) {
+
+		} else {
+			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT))
+				echo("Found a number");
+
+		}
+
 		//collect values of inputs from form
 		$product1 = $_REQUEST['quantityOne'];
-		console.log($product1);
 	}
 
 ?>
