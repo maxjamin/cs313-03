@@ -126,5 +126,9 @@ session_start();
 	<input type="submit" name="one" name="Add to Cart"><br>
 </form>
 
+<?php echo $address;?>
+
+
+
 </body>
 </html>
