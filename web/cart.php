@@ -26,11 +26,11 @@ session_start();
 	if(!empty($_POST["one"])) {
 
 		if(!empty($_POST["oneAdd"])) {
-			$value = $_SESSION["ProductOneQuantity"]
+			$value = $_SESSION["ProductOneQuantity"];
 			$_SESSION["ProductOneQuantity"] = value + 1;
 		}
 		if(!empty($_POST["oneSub"])) {
-			$value = $_SESSION["ProductOneQuantity"]
+			$value = $_SESSION["ProductOneQuantity"];
 			$_SESSION["ProductOneQuantity"] = value - 1;
 		}
 	}
