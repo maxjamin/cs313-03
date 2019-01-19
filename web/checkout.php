@@ -37,7 +37,7 @@
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
-	Email:<input type="text" name="email"><br>
+	Email:<input type="text" name="email" value="email"><br>
 	<span class="error"><?php echo $emailErr;?>
 	Adress:<input type="text" name="Adress"><br>
 	State<input type="text" name="quantityOne"><br>
