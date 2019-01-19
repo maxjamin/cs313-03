@@ -24,11 +24,13 @@ session_start();
 
 	//check if removed 
 	if(!empty($_POST["one"])) {
+		$changVal = $_POST["one"];
 
 		if(!empty($_POST["oneAdd"]) && empty($_POST["oneSub"]))
 		{
-			echo "First";
-			//$_POST["oneAdd"] 
+			echo $changVal;
+			
+
 		}
 	}
 	if(!empty($_POST["two"])) {
