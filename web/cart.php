@@ -21,6 +21,10 @@ session_start();
 <?php
 	print_r($_SESSION);
 
+	$purchased01 = $purchased02 = $purchased03 = $purchased04 = "notPurchased";
+	$numberOfProducts01 = $numberOfProducts02 = $numberOfProducts03 =
+	$numberOfProducts04 = 0;
+
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		//check if removed 
 		if(isset($_POST["one"])) {
