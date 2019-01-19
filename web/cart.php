@@ -25,6 +25,21 @@ session_start();
 ?>
 
 
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+  	<h3>Product 1</h3>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+  	<h3>Product 2</h3>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+  	<h3>Product 3</h3>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+  	<h3>Product 4</h3>
+  </div>
+</div> 
+
 
 </body>
 </html>
