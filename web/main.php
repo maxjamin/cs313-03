@@ -16,6 +16,32 @@
 </div>
 <br>
 
+
+<?php
+	$product1 = "";
+	$product1Err = "";
+
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+		if(empty($_POST['quantityOne'])) {
+
+		} else {
+			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
+				//collect values of inputs from form
+				$product1 = $_REQUEST['quantityOne'];
+			}
+			else
+				{ $product1Err = "Please enter a number" }
+
+		}
+
+	}
+
+?>
+
+
+
  <div class="row">
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 1</h3>
@@ -49,28 +75,6 @@
 </div> 
 
 
-<?php
-	$product1 = "";
-	$product1Err = "";
-
-
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-		if(empty($_POST['quantityOne'])) {
-
-		} else {
-			if(filter_var($_POST['quantityOne'], FILTER_VALIDATE_INT)){
-				//collect values of inputs from form
-				$product1 = $_REQUEST['quantityOne'];
-			}
-			else
-				{ $product1Err = "Please enter a number" }
-
-		}
-
-	}
-
-?>
 
 
 </body>
