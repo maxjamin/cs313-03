@@ -26,14 +26,13 @@
 	if (empty($_POST["email"])) {
 		echo "test02";
     $emailErr = "Email is required";
-  } else {
-    	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      		$emailErr = "Invalid email format";
-      		echo "Error";
-    	}
-    	else
-    	{	echo "It worked";
-    		$email = test_input($_POST["email"]); }
+  }  else {
+    $email = test_input($_POST["email"]);
+    echo "test03";
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
   }
 
 
