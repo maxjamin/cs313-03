@@ -23,12 +23,13 @@
 
 <?php
 
-	$product1= $product2 = "";
-	$product1Err = $product2Err = "";
+	$product1= $product2 = $product3 = "";
+	$product1Err = $product2Err = $product3Err = "";
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+		/*******************************************************************/
 		if(empty($_POST["quantityOne"])) {
 			$product1Err = "Please enter a number";
 		} else {
@@ -88,6 +89,36 @@
 		
 		}
 
+		/********************************************************************/
+		if(empty($_POST["quantityThree"])) {
+			$product3Err = "Please enter a number";
+		} else {
+			if(!filter_var($_POST["quantityThree"], FILTER_VALIDATE_INT) === false){
+				//collect values of inputs from form
+				$product3 = $_POST["quantityThree"];
+
+				/*Change amount of product add to remaining items if already in cart*/
+				if(($_SESSION["ProductThreeQuantity"]) == 0)
+				{
+					$_SESSION["ProductThree"] = "purchased";
+					$_SESSION["ProductThreeQuantity"] = $product3;
+				}
+				else
+				{
+					$product = $_SESSION["ProductThreeQuantity"];
+					print_r("Add more\n");
+
+					$_SESSION["ProductThreeQuantity"] = $product + $product3;
+					$_SESSION["ProductThree"]= "purchased";
+					
+				}
+
+			}
+			else
+				{ $product3Err = "Please enter a number"; }
+		
+		}
+
 
 	}
 	print_r($_SESSION);
@@ -114,16 +145,18 @@
   </div>
   <div class="column" style="background-color:#ccc;">
   	<h3>Product 3</h3>
-  	<form action="welcome_get.php" method="post">
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityThree"><br>
 		<input type="submit" name="three" name="Add to Cart">
+		<span class="error"><?php echo $product3Err;?></span>
 	</form>
   </div>
   <div class="column" style="background-color:#ddd;">
   	<h3>Product 4</h3>
-  	<form action="welcome_get.php" method="post">
+  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 		Quantity<input type="text" name="quantityFour"><br>
 		<input type="submit" name="four" name="Add to Cart">
+		<span class="error"><?php echo $product4Err;?></span>
 	</form>
   </div>
 </div> 
