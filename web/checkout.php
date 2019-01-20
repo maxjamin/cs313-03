@@ -138,7 +138,7 @@ echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $
 
 ?>
 <br>
-<a class="navbar" href="confirmation.php">Checkout</a>
+<a font-size: 30px; href="confirmation.php">Checkout</a>
 
 </body>
 </html>
