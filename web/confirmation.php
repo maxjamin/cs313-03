@@ -32,19 +32,27 @@ session_start();
     $productThree = $_SESSION["ProductThree"];
     $productThreeQuantity = $_SESSION["ProductThreeQuantity"];
 
+    $productFour = $_SESSION["ProductFour"];
+    $productFourQuantity = $_SESSION["ProductFourQuantity"];
+
     echo "User information: " . $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br><br>";
 
     if($productOneQuantity > 0)
     {
-        echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items.";
+        echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items." . "<br>";
     }
     if($productTwoQuantity > 0)
     {
-        echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items.";
+        echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items." . "<br>";
     }
     if($productThreeQuantity > 0)
     {
-        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
+        echo "Product Four:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
+    }
+
+    if($productFourQuantity > 0)
+    {
+        echo "Product Four:" . "<br>" . $productFour . "<br>" . "With " . $productFourQuantity . " number of items.";
     }
 
 
