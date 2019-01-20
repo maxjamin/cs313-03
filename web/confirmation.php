@@ -47,7 +47,7 @@ session_start();
     }
     if($productThreeQuantity > 0)
     {
-        echo "Product Four:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
+        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
     }
 
     if($productFourQuantity > 0)
