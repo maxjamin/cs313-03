@@ -18,7 +18,7 @@ session_start();
 <h3>Purchase: </h3>
 
 <?php
-    $address = $_SESSION["address"];
+    $address = $_POST["Name"];
     $zip = $_SESSION["zip"];
     $email = $_SESSION["email"];
     $state = $_SESSION["state"];
