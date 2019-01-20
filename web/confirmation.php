@@ -29,14 +29,24 @@ session_start();
     $productTwo = $_SESSION["ProductTwo"];
     $productTwoQuantity = $_SESSION["ProductTwoQuantity"];
 
-    echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br><br>";
+    $productThree = $_SESSION["ProductThree"];
+    $productThreeQuantity = $_SESSION["ProductThreeQuantity"];
+
+    echo "User information: " . $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br><br>";
 
     if($productOneQuantity > 0)
     {
         echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items.";
+    }
+    if($productTwoQuantity > 0)
+    {
         echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items.";
     }
-    
+    if($productThreeQuantity)
+    {
+        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
+    }
+
 
 ?>
 
