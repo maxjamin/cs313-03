@@ -23,7 +23,13 @@ session_start();
     $email = $_SESSION["email"];
     $state = $_SESSION["state"];
 
+    $productOne = $_SESSION["ProductOne"];
+    $productOneQuantity = $_SESSION["ProductOneQuantity"];
+
     echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br>";
+
+    echo "Product One:" + <br> + $productOne + <br> + "With " $ProductOneQuantity + " number of items.";
+
 
 ?>
 
