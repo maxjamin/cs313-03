@@ -18,12 +18,12 @@ session_start();
 <h3>Purchase: </h3>
 
 <?php
-    $address = $_POST["Name"];
+    $address = $_SESSION["address"];
     $zip = $_SESSION["zip"];
     $email = $_SESSION["email"];
     $state = $_SESSION["state"];
 
-    echo $email . "\n" . $address . "\n" . $zip . "\n" . $state;
+    echo $email . "\n" . $address . "\n" . $zip . "\n" . $state . "\n";
 
 ?>
 

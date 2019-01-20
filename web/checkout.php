@@ -129,7 +129,7 @@ session_start();
 
 	Zip: <input type="text" name="zip"><br>
     <span class="error"><?php echo $zipErr;?></span>
-	<input type="submit" name="one" name="Add to Cart"><br>
+	<input type="submit" name="one" name="Submit"><br>
 </form>
 
 <?php
@@ -140,7 +140,7 @@ echo $email;
 echo $state; */
 ?>
 
-<!--<a href="confirmation.php">Checkout</a> !-->
+<a href="confirmation.php">Checkout</a>
 
 </body>
 </html>
