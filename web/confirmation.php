@@ -26,9 +26,13 @@ session_start();
     $productOne = $_SESSION["ProductOne"];
     $productOneQuantity = $_SESSION["ProductOneQuantity"];
 
-    echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br>";
+    $productTwo = $_SESSION["ProductTwo"];
+    $productTwoQuantity = $_SESSION["ProductTwoQuantity"];
 
-    echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $ProductOneQuantity . " number of items.";
+    echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br><br>";
+
+    echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items.";
+    echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items.";
 
 
 ?>
