@@ -133,14 +133,13 @@ session_start();
 </form>
 
 <?php
-echo "Test010  ";
+/*echo "Test010  ";
 echo $zip;
 echo $address;
 echo $email;
-echo $state; 
+echo $state; */
 ?>
-
-<!--<a href="confirmation.php">Checkout</a> !-->
+ <button type="button" href="confirmation.php">Click Me!</button> 
 
 </body>
 </html>
