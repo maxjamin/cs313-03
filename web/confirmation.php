@@ -42,7 +42,7 @@ session_start();
     {
         echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items.";
     }
-    if($productThreeQuantity)
+    if($productThreeQuantity > 0)
     {
         echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
     }
