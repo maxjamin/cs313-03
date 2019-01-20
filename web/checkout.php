@@ -70,7 +70,7 @@ session_start();
 
 	
 ?>
-<form method="post" action="confirmation.php">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 	Email: <input type="text" name="email"> 
     <span class="error"><?php echo $emailErr;?></span><br>
