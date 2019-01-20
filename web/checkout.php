@@ -20,7 +20,7 @@ session_start();
 <h3>Please enter your personal information: </h3>
 
 <?php
-	print_r($_SESSION);
+	
 	$emailErr = $zipErr = $addressErr = "";
 	$email = $zip = $address = $state = "";
 
@@ -70,7 +70,7 @@ session_start();
 
 	
 ?>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action="confirmation.php">
 
 	Email: <input type="text" name="email"> 
     <span class="error"><?php echo $emailErr;?></span><br>
@@ -139,7 +139,8 @@ echo $address;
 echo $email;
 echo $state; */
 ?>
-<a href="confirmation.php">Home</a>
+
+<!--<a href="confirmation.php">Checkout</a> !-->
 
 </body>
 </html>
