@@ -39,20 +39,20 @@ session_start();
 
     if($productOneQuantity > 0)
     {
-        echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items." . "<br>";
+        echo "Product One:" . "<br>" . $productOne . "<br>" . "With " . $productOneQuantity . " number of items." . "<br><br>";
     }
     if($productTwoQuantity > 0)
     {
-        echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items." . "<br>";
+        echo "Product Two:" . "<br>" . $productTwo . "<br>" . "With " . $productTwoQuantity . " number of items." . "<br><br>";
     }
     if($productThreeQuantity > 0)
     {
-        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items." . "<br>";
+        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items." . "<br><br>";
     }
 
     if($productFourQuantity > 0)
     {
-        echo "Product Four:" . "<br>" . $productFour . "<br>" . "With " . $productFourQuantity . " number of items." . "<br>";
+        echo "Product Four:" . "<br>" . $productFour . "<br>" . "With " . $productFourQuantity . " number of items." . "<br><br>";
     }
 
 
