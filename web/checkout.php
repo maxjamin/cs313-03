@@ -133,11 +133,8 @@ session_start();
 </form>
 
 <?php
-/*echo "Test010  ";
-echo $zip;
-echo $address;
-echo $email;
-echo $state; */
+echo $userInfo . "\n" .$address . "\n" . $state . "\n" . zip . "\n" . $email . "\n";
+
 ?>
 
 <a href="confirmation.php">Checkout</a>
