@@ -19,7 +19,7 @@ session_start();
 <br>
 
 <?php
-	print_r($_SESSION);
+	//print_r($_SESSION);
 
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		//check if removed 
