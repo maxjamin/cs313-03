@@ -67,6 +67,7 @@ session_start();
 	$_SESSION["zip"] = $zip;
 	$_SESSION["email"] = $email;
 	$_SESSION["state"] = $state;
+	$userInfo = "User Info: ";
 
 	
 ?>
@@ -133,10 +134,10 @@ session_start();
 </form>
 
 <?php
-echo $userInfo . "\n" .$address . "\n" . $state . "\n" . zip . "\n" . $email . "\n";
+echo $userInfo . "<b>" .$address . "<b>" . $state . "\n" . zip . "\n" . $email . "\n";
 
 ?>
-
+<br>
 <a href="confirmation.php">Checkout</a>
 
 </body>
