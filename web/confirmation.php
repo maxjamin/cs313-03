@@ -47,12 +47,12 @@ session_start();
     }
     if($productThreeQuantity > 0)
     {
-        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items.";
+        echo "Product Three:" . "<br>" . $productThree . "<br>" . "With " . $productThreeQuantity . " number of items." . "<br>";
     }
 
     if($productFourQuantity > 0)
     {
-        echo "Product Four:" . "<br>" . $productFour . "<br>" . "With " . $productFourQuantity . " number of items.";
+        echo "Product Four:" . "<br>" . $productFour . "<br>" . "With " . $productFourQuantity . " number of items." . "<br>";
     }
 
 
