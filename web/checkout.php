@@ -134,7 +134,7 @@ session_start();
 </form>
 
 <?php
-echo $userInfo . "<b>" .$address . "<b>" . $state . "\n" . zip . "\n" . $email . "\n";
+echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br>";
 
 ?>
 <br>
