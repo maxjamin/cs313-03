@@ -28,7 +28,7 @@ session_start();
 
     echo $userInfo . "<br>" .$address . "<br>" . $state . "<br>" . $zip . "<br>" . $email . "<br>";
 
-    echo "Product One:" + <br> + $productOne + <br> + "With " $ProductOneQuantity + " number of items.";
+    echo "Product One:" . <br> . $productOne . <br> . "With " $ProductOneQuantity . " number of items.";
 
 
 ?>
