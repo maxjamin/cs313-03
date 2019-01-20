@@ -139,7 +139,7 @@ echo $address;
 echo $email;
 echo $state; */
 ?>
- <button type="button" href="confirmation.php">Click Me!</button> 
+<a href="confirmation.php">Home</a>
 
 </body>
 </html>
